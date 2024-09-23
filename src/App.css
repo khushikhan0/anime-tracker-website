@@ -18,6 +18,25 @@
   filter: drop-shadow(0 0 2em #61dafbaa);
 }
 
+.dark-mode {
+  background-color: #121212;
+  color: white;
+}
+
+.light-mode {
+  background-color: #ffffff;
+  color: #0c1d19;
+}
+
+
+.title {
+  color: inherit;
+}
+
+.about-us {
+  color: inherit;
+}
+
 @keyframes logo-spin {
   from {
     transform: rotate(0deg);
@@ -37,10 +56,10 @@
   padding: 2em;
 }
 
-.title {
+/* .title {
   color: #0c1d19;
 }
 
 .about-us {
   color: #193d34;
-}
+} */
