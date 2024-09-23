@@ -28,7 +28,7 @@ function App() {
   )
 }
 
-const About = () => <div>About Page</div>;
+const About = () => <div><h1>About Page</h1></div>;
 const NotFound = () => <div>404 - Page Not Found</div>;
 
 export default App
