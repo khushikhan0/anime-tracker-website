@@ -1,19 +1,29 @@
 import './App.css'
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Navbar from './components/NavBar/Navbar'
+import Login from './pages/Login/Login';        
+import Main from './pages/Main/Main'; 
+import Home from './pages/Home/Home'; 
 
 function App() {
 
   return (
     <>
-    <div>
+    <Router>
       <Navbar />
-    </div>
-    <h1 className='title'>MyAnimeList If It Wasn't Mid</h1>
-      <h4 className="about-us">
-        developed by ahren agatep and khushi khan :3
-      </h4>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/login" element={<Login />} />
+        <Route path="/main" element={<Main />} />
+        <Route path="/about" element={<About />} />
+        <Route path="*" element={<NotFound />} />
+      </Routes>
+    </Router>
     </>
   )
 }
+
+const About = () => <div>About Page</div>;
+const NotFound = () => <div>404 - Page Not Found</div>;
 
 export default App
