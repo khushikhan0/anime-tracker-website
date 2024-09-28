@@ -6,12 +6,6 @@ import Main from './pages/Main/Main';
 import Home from './pages/Home/Home'; 
 
 function App() {
-  const [isDarkMode, setIsDarkMode] = useState(false);
-
-  const toggleTheme = () => {
-    setIsDarkMode(!isDarkMode);
-  };
-
   return (
     <>
     <Router>
